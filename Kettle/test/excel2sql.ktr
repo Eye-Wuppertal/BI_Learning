@@ -501,7 +501,7 @@
   <order>
     <hop>
       <from>Excel输入</from>
-      <to>SQL 文件输出</to>
+      <to>表输出</to>
       <enabled>Y</enabled>
     </hop>
   </order>
@@ -713,8 +713,8 @@
     </GUI>
   </step>
   <step>
-    <name>SQL 文件输出</name>
-    <type>SQLFileOutput</type>
+    <name>表输出</name>
+    <type>TableOutput</type>
     <description/>
     <distribute>Y</distribute>
     <custom_distribution/>
@@ -726,24 +726,22 @@
     <connection>mysql_kettle_demo</connection>
     <schema>kettle_demo</schema>
     <table>t_user</table>
+    <commit>1000</commit>
     <truncate>N</truncate>
-    <create>Y</create>
-    <encoding>UTF-8</encoding>
-    <dateformat>MM/dd/yyyy HH:mm:ss</dateformat>
-    <addtoresult>N</addtoresult>
-    <startnewline>N</startnewline>
-    <file>
-      <name/>
-      <extention>sql</extention>
-      <append>N</append>
-      <split>N</split>
-      <haspartno>N</haspartno>
-      <add_date>N</add_date>
-      <add_time>N</add_time>
-      <splitevery>0</splitevery>
-      <create_parent_folder>N</create_parent_folder>
-      <DoNotOpenNewFileInit>N</DoNotOpenNewFileInit>
-    </file>
+    <ignore_errors>N</ignore_errors>
+    <use_batch>Y</use_batch>
+    <specify_fields>N</specify_fields>
+    <partitioning_enabled>N</partitioning_enabled>
+    <partitioning_field/>
+    <partitioning_daily>N</partitioning_daily>
+    <partitioning_monthly>Y</partitioning_monthly>
+    <tablename_in_field>N</tablename_in_field>
+    <tablename_field/>
+    <tablename_in_table>Y</tablename_in_table>
+    <return_keys>N</return_keys>
+    <return_field/>
+    <fields>
+    </fields>
     <attributes/>
     <cluster_schema/>
     <remotesteps>
@@ -753,7 +751,7 @@
       </output>
     </remotesteps>
     <GUI>
-      <xloc>448</xloc>
+      <xloc>480</xloc>
       <yloc>240</yloc>
       <draw>Y</draw>
     </GUI>
