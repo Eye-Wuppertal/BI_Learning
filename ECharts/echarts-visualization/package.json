@@ -1,0 +1,10 @@
+{
+  "name": "echarts-visualization",
+  "version": "1.0.0",
+  "dependencies": {
+    "mysql": "^2.18.1"
+  },
+  "devDependencies": {
+    "express": "^4.17.3"
+  }
+}
