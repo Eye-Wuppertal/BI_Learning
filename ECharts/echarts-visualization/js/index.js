@@ -1,11 +1,6 @@
 // 每一个图表都是立即执行函数，防止myChart、option等变量污染
 // 柱状图模块1
-const express = require("express");
 //引入封装好的mysql文件
-const db = require("./test");
-const server =express();
-
-
 (function() {
   // 1实例化对象
   var myChart = echarts.init(document.querySelector(".bar .chart"));
