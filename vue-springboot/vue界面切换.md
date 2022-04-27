@@ -144,3 +144,15 @@ new Vue({
 ![image-20220426205610063](img/image-20220426205610063.png)
 
 ![image-20220426205615776](img/image-20220426205615776.png)
+
+## vue内嵌入HTML
+
+```vue
+<div>
+  <iframe src="/lda.html" frameborder="0" style="width:100%;height:860px; background-color: rgba(249,253,255,0.33)" id="iframeBox">  </iframe>
+</div>
+```
+
+需要将使用的html文件放入public文件夹内，引用html文件时，**直接/文件名**，就可以
+
+![image-20220427235456758](img/image-20220427235456758.png)
